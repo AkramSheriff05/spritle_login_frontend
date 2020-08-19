@@ -2,7 +2,7 @@ const mongoose=require('mongoose')
 
 
 
-mongoose.connect("mongodb+srv://Task-app:9962343038@cluster0.5blo6.mongodb.net/<dbname>?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://Task-app:9962343038@cluster0.5blo6.mongodb.net/loginauth?retryWrites=true&w=majority",{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology: true ,
