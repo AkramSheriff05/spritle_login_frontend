@@ -1,8 +1,8 @@
 const mongoose=require('mongoose')
 
-const DataBase="mongodb://127.0.0.1:27017/spritle"
+const DataBase=
 
-mongoose.connect(process.env.MongoUrl,{
+mongoose.connect("mongodb://127.0.0.1:27017/spritle",{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology: true ,
