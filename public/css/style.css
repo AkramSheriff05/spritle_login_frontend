@@ -1,0 +1,41 @@
+body{   
+    
+     display:flex;
+    flex-direction: column;
+    background-color:rgb(233, 233, 233);
+    opacity: 100px;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+ }
+
+ .signup,.loginform{
+      margin:0 auto;
+      padding:50px;
+
+
+}
+
+a{
+   color:green;
+   padding-left: 25px;
+   float: right;
+}
+
+.btnlogin,.btnsignup{
+
+    padding: 0px 3px;
+   background-color: rgb(73, 73, 245);
+   color:white;
+  
+}
+.btnlogin:hover,.btnsignup:hover{
+    background-color: rgb(47, 214, 47);
+       
+}
+h1,p{
+    text-align: center;
+}
+
+label{
+    margin-bottom: 3px;
+}
