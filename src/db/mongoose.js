@@ -1,8 +1,8 @@
 const mongoose=require('mongoose')
 
+const DataBase="mongodb://127.0.0.1:27017/spritle"
 
-
-mongoose.connect("mongodb+srv://Task-app:9962343038@cluster0.5blo6.mongodb.net/loginauth?retryWrites=true&w=majority",{
+mongoose.connect(process.env.MongoUrl,{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology: true ,
