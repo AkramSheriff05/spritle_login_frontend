@@ -1,7 +1,7 @@
 const bodyparser=require('body-parser')
 const path=require('path')
 const express=require('express')
-const {welcomeMail}=require('./mail/credentials')
+const welcomeMail=require('./mail/credentials')
 const USER=require('./db/mongoose')
 const app=express()
 const host=process.env.PORT||7000
@@ -18,10 +18,11 @@ app.post('/signup_in',async(req,res)=>{
     const user= new USER(req.body)
     
     try{
-        console.log(user)
-   await user.save()
-   welcomeMail(user.email,user.firstname)
-   return res.redirect('/login')
+        console.log(user.email,user.firstname)
+     welcomeMail(user.email,user.firstname)
+  await    user.save()
+     
+return res.redirect('login')
     }catch(e){
 return res.status(400).render('signup')
     }
