@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/spritle",{
+mongoose.connect(process.env.MONGODB||"mongodb://127.0.0.1:27017/spritle",{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology: true ,
